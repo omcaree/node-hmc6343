@@ -1,25 +1,5 @@
-Node.js HMC6343 3-Axis Magnetometer Module
-==========================================
-
-This module allows your code to interogate the HMC6343 magnetometer via the I2C bus.
-
-Installation
-============
-
-Install the module with 
-
-```
-npm install hmc6343
-```
-
-Usage
-=====
-
-Basic usage can be found in main.js...
-
-```
 //include the module
-var hmc6343 = require('hmc6343');
+var hmc6343 = require('./src/hmc6343.js');
 
 //create new instance
 var compass = new hmc6343('/dev/i2c-3', 0x19);
@@ -38,4 +18,3 @@ compass.readMag(function(magData) {
 compass.readAtt(function(attData) {
 	console.log("Attitude: " + attData.heading + ", " + attData.pitch + ", " + attData.roll);
 });
-```

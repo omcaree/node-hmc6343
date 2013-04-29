@@ -1,6 +1,6 @@
 {
   "name": "hmc6343",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Module to read from the HMC6343 Magnetometer",
   "main": "src/hmc6343.js",
   "scripts": {
