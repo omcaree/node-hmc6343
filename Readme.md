@@ -21,7 +21,7 @@ Basic usage can be found in main.js...
 //include the module
 var hmc6343 = require('hmc6343');
 
-//create new instance
+//create new instance. Arguments are the i2c device to which the HMC6343 is connected and its 7-bit address (0x19 by default)
 var compass = new hmc6343('/dev/i2c-3', 0x19);
 
 //read in accelerometer data
